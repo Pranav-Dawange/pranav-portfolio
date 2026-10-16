@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function() {
+        var saved = localStorage.getItem('pranav-portfolio-theme');
+        if (saved === 'dark' || saved === 'light') {
+          document.documentElement.setAttribute('data-theme', saved);
+        } else {
+          document.documentElement.setAttribute('data-theme', 'light');
+        }
+      })();
+    </script>
+    <title>Pranav Dawange — Data Science, AI/ML & Software Development</title>
+    <meta name="description" content="Portfolio of Pranav Dawange — B.Tech Computer Science and Engineering (Data Science) student at VIT Pune. Specializing in AI/ML, Computer Vision, Geospatial Analytics, and Full-Stack Engineering." />
+    <meta name="keywords" content="Pranav Dawange, Data Science, AI, Machine Learning, Computer Vision, VIT Pune, React, FastAPI, PyTorch, Portfolio" />
+    <meta name="author" content="Pranav Dawange" />
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Pranav Dawange — Personal Portfolio" />
+    <meta property="og:description" content="Data Science · AI/ML · Computer Vision · Software Development | VIT Pune" />
+    <meta property="og:image" content="/images/pranav-avatar.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Pranav Dawange — Personal Portfolio" />
+    <meta name="twitter:description" content="Data Science · AI/ML · Computer Vision · Software Development | VIT Pune" />
+    <meta name="twitter:image" content="/images/pranav-avatar.png" />
+
+    <!-- Typography: Plus Jakarta Sans for crisp UI + Fraunces for warm editorial headings -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
